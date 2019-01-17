@@ -2,7 +2,7 @@
 
 Here a simple boilerplate to have a node app hooked with create-react-app ( using proxy for dev ) and ready to be deployed on aws elastic beanstalk. 
 
-#setup
+**setup**
 create a IAM
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html
 give access for programmatic access
