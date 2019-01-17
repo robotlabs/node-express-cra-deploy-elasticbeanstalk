@@ -1,0 +1,17 @@
+{
+  "name": "nodecra5",
+  "version": "1.0.0",
+  "scripts": {
+    "prestart": "npm install && cd ./client && npm install && npm run build",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "ejs": "latest",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "aws-sdk": "latest"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
