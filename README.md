@@ -16,7 +16,6 @@ aws_access_key_id = xxx
 aws_secret_access_key = xxx
 
 **create-eb-environment**
-<br />
 go on your folder root.
 `eb init`
 choose the correct region ( the one you setuo in your IAM)
@@ -44,6 +43,7 @@ without this, you will probably get an error
 you can use `prestart` npm command if your npm start get too complicated.
 
 **Run**
+
 `npm run dev` will launch create-react-app web server and nodemon on the app. 
 
 `npm run prod` will create a build and launch a local server to test
