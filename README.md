@@ -3,6 +3,7 @@
 Here a simple boilerplate to have a node app hooked with create-react-app ( using proxy for dev ) and ready to be deployed on aws elastic beanstalk. 
 
 **setup**
+
 create a IAM
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html
 give access for programmatic access
@@ -15,6 +16,7 @@ aws_access_key_id = xxx
 aws_secret_access_key = xxx
 
 **create-eb-environment**
+
 go on your folder root.
 `eb init`
 choose the correct region ( the one you setuo in your IAM)
