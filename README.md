@@ -2,7 +2,7 @@
 
 Here a simple boilerplate to have a node app hooked with create-react-app ( using proxy for dev ) and ready to be deployed on aws elastic beanstalk. 
 
-**setup**
+**SETUP**
 
 create a IAM
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html
@@ -15,7 +15,7 @@ add your credentials in .aws credentials like this:
 aws_access_key_id = xxx
 aws_secret_access_key = xxx
 
-**create-eb-environment**
+**CREATE EB ENVIRONMENT**
 
 go on your folder root.
 `eb init`
@@ -43,7 +43,7 @@ without this, you will probably get an error
 3) don't forget to change in aws configuration / software to add `npm start` as command, otherwise node will simply run `node app.js` as default and will fail to install all the dependencies, and build the `build`
 you can use `prestart` npm command if your npm start get too complicated.
 
-**Run**
+**RUN**
 
 `npm run dev` will launch create-react-app web server and nodemon on the app. 
 
