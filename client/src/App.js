@@ -33,7 +33,7 @@ class App extends Component {
 render() {
     return (
       <div className="App">
-      This is a deploy test to AWS Elasticbean sTalk
+      This is a deploy test to AWS Elasticbean sTalk. yes
         <header className="App-header">
         Yo
         </header>

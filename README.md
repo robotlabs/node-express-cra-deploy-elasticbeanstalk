@@ -40,3 +40,10 @@ useful commands
 without this, you will probably get an error
 3) don't forget to change in aws configuration / software to add `npm start` as command, otherwise node will simply run `node app.js` as default and will fail to install all the dependencies, and build the `build`
 you can use `prestart` npm command if your npm start get too complicated.
+
+##Run
+`npm run dev` will launch create-react-app web server and nodemon on the app. 
+
+`npm run prod` will create a build and launch a local server to test
+
+`npm start` is being used by elastic, but is similar to prod, just using node instead of nodemon.

@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "scripts": {
     "prestart": "npm install && cd ./client && npm install && npm run build",
-    "start": "node app.js"
+    "start": "node app.js",
+    "prod": "npm run prestart && npm run server",
+    "client": "cd client && npm start",
+    "server": "nodemon app.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "setup": "npm install && cd ./client && npm install"
   },
   "dependencies": {
-    "ejs": "latest",
     "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "aws-sdk": "latest"
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "concurrently": "^4.0.1"
