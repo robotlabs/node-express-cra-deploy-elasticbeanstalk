@@ -33,3 +33,10 @@ then
 useful commands
 `eb logs`
 `eb ssh`
+
+##IMPORTANT NOTES.
+1) if you are in a git repo, don't forget to commit, before `eb deploy`
+2) in .ebextensions there is a command that allow the writing in `client` from node.js
+without this, you will probably get an error
+3) don't forget to change in aws configuration / software to add `npm start` as command, otherwise node will simply run `node app.js` as default and will fail to install all the dependencies, and build the `build`
+you can use `prestart` npm command if your npm start get too complicated.
