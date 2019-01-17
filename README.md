@@ -14,7 +14,7 @@ add your credentials in .aws credentials like this:
 aws_access_key_id = xxx
 aws_secret_access_key = xxx
 
-#create-eb-environment
+**create-eb-environment**
 go on your folder root.
 `eb init`
 choose the correct region ( the one you setuo in your IAM)
@@ -34,14 +34,14 @@ useful commands
 `eb logs`
 `eb ssh`
 
-##IMPORTANT NOTES.
+**IMPORTANT NOTES.**
 1) if you are in a git repo, don't forget to commit, before `eb deploy`
 2) in .ebextensions there is a command that allow the writing in `client` from node.js
 without this, you will probably get an error
 3) don't forget to change in aws configuration / software to add `npm start` as command, otherwise node will simply run `node app.js` as default and will fail to install all the dependencies, and build the `build`
 you can use `prestart` npm command if your npm start get too complicated.
 
-##Run
+**Run**
 `npm run dev` will launch create-react-app web server and nodemon on the app. 
 
 `npm run prod` will create a build and launch a local server to test
