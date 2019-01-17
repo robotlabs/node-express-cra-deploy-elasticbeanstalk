@@ -16,6 +16,7 @@ aws_access_key_id = xxx
 aws_secret_access_key = xxx
 
 **create-eb-environment**
+
 go on your folder root.
 `eb init`
 choose the correct region ( the one you setuo in your IAM)
